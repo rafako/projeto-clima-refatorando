@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./css/chuva-leve.png" type="image/x-icon">
+
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="cityInput" placeholder="Digite o nome da cidade">
+            <button onclick="btnClick()">Buscar</button>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="info">
+            <p>Cidade</p>
+        </div>
+        <div class="info_city">
+            <h1 id="cityName">--</h1>
+        </div>
+        <div class="infos_previsao">
+            <img id="img_nuvem" src="https://openweathermap.org/img/wn/04n.png" alt="icone de previsão">
+            <p class="info_previsao">--</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="details">
+            <div class="box">
+                <p>Umidade</p>
+                <p><strong id="humidity">--%</strong></p>
+            </div>
+            <div class="box">
+                <p>Temp</p>
+                <p><strong id="temperature">--°C</strong></p>
+            </div>
+            <div class="box">
+                <p>Vento</p>
+                <p><strong id="wind">-- km/h</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
